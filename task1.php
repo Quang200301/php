@@ -7,7 +7,7 @@ function Quang(){
         <td> <?php echo ($i)  ?></td>
         <td><?php echo $_SESSION['Trai_cay'][$i][0]  ?></td>
         <td><?php  echo $_SESSION['Trai_cay'][$i][1]   ?></td>
-        <td><?php  echo $_SESSION['Trai_cay'][$i][2] ?></td>
+        <td> <img src="<?php  echo $_SESSION['Trai_cay'][$i][2] ?>"></td>
         <td> <a href="task1.php? delete=<?php echo ($i)  ?>">delete</a> <a href="task3.php? edit=<?php echo ($i) ?>">edit</a></td>
         </tr>
         <?php 
@@ -26,7 +26,7 @@ if(isset( $_GET['delete']) && $_GET['delete']>=0){
         
             <table border="1px solod">
                 <tr>
-                <th>STT</th>
+                    <th>STT</th>
                     <th>name</th>
                     <th>price</th>
                     <th>tỉnh</th>  
